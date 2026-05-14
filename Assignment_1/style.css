@@ -1,0 +1,142 @@
+*{
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+}
+
+/* HEADER */
+header{
+  text-align: center;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #f8fafc;
+}
+
+/* LAYOUT */
+.container{
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+}
+
+/* CARD BASE */
+.card{
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+}
+
+.form-card{
+  width: 340px;
+}
+
+.events-card{
+  flex: 1;
+}
+
+/* TITLES */
+.card h3{
+  color: #38bdf8;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* FORM */
+label{
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 12px;
+  display: block;
+  color: #cbd5f5;
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+  margin-top: 6px;
+  background: rgba(255,255,255,0.05);
+  color: #f1f5f9;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus{
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56,189,248,0.2);
+}
+
+textarea{
+  resize: none;
+  height: 80px;
+}
+
+/* BUTTONS */
+button{
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+button:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(56,189,248,0.4);
+}
+
+.form-card button{
+  width: 100%;
+  margin-top: 16px;
+}
+
+.actions{
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.actions button{
+  flex: 1;
+}
+
+/* EMPTY MESSAGE */
+#emptyMsg{
+  color: #f87171;
+  font-size: 14px;
+}
+
+/* EVENT CARD */
+.event{
+  background: rgba(255,255,255,0.06);
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.2s ease;
+}
+
+.event:hover{
+  background: rgba(255,255,255,0.1);
+}

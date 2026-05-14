@@ -1,0 +1,33 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container.light {
+  background-color: #f7f7f7;
+  color: #111111;
+}
+
+.container.dark {
+  background-color: #111111;
+  color: #f7f7f7;
+}
+
+.theme-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.theme-button:hover {
+  background-color: #1d4ed8;
+}
